@@ -1,7 +1,18 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { configureDiagramsPlugin } from 'vitepress-plugin-diagrams'
+import llmstxt, { copyOrDownloadAsMarkdownButtons } from 'vitepress-plugin-llms'
+import { plantumlMarkdownPlugin, plantumlVitePlugin } from 'vitepress-plugin-plantuml'
+import { videoMarkdownPlugin } from 'vitepress-plugin-video'
+import { pdfMarkdownPlugin } from 'vitepress-plugin-pdf'
+import { qrcodeMarkdownPlugin } from 'vitepress-plugin-qrcode'
+import { stepsMarkdownPlugin } from 'vitepress-plugin-steps'
+import { collapseMarkdownPlugin } from 'vitepress-plugin-collapse'
+import { markdownPlugin as markMarkdownPlugin } from 'vitepress-plugin-mark'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'dure.app',
   description: '듀레 앱 - dure.one과 myCart 프로젝트 소개',
 
@@ -72,6 +83,43 @@ export default defineConfig({
     }
   },
 
+  // Vite plugins configuration
+  vite: {
+    plugins: [llmstxt(), plantumlVitePlugin()],
+    ssr: {
+      noExternal: [/^vitepress-plugin-/, /^@nolebase\//]
+    }
+  },
+
+  // Markdown plugins configuration
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+      md.use(configureDiagramsPlugin, {
+        krokilUrl: 'https://kroki.io'
+      })
+      md.use(copyOrDownloadAsMarkdownButtons)
+      md.use(plantumlMarkdownPlugin)
+      md.use(videoMarkdownPlugin, {
+        artplayer: true,
+        youtube: true,
+        bilibili: true,
+        acfun: true
+      })
+      md.use(pdfMarkdownPlugin)
+      md.use(qrcodeMarkdownPlugin)
+      md.use(stepsMarkdownPlugin)
+      md.use(collapseMarkdownPlugin)
+      md.use(markMarkdownPlugin)
+    },
+    languageAlias: { plantuml: 'txt' }
+  },
+
+  // Mermaid configuration
+  mermaid: {
+    theme: 'default'
+  },
+
   themeConfig: {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nikescar' }
@@ -80,4 +128,5 @@ export default defineConfig({
       provider: 'local'
     }
   }
-})
+}))
+

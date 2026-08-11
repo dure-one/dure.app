@@ -10,6 +10,12 @@ import { qrcodeMarkdownPlugin } from 'vitepress-plugin-qrcode'
 import { stepsMarkdownPlugin } from 'vitepress-plugin-steps'
 import { collapseMarkdownPlugin } from 'vitepress-plugin-collapse'
 import { markdownPlugin as markMarkdownPlugin } from 'vitepress-plugin-mark'
+import { copyReadme } from './plugins/copy-readme'
+
+// Must run before defineConfig() below: VitePress globs docs/ for its page
+// list as soon as this config module finishes evaluating, so docs/readme.md
+// has to exist by then, not later via a Vite buildStart hook.
+copyReadme()
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
@@ -87,7 +93,7 @@ export default withMermaid(defineConfig({
   vite: {
     plugins: [llmstxt(), plantumlVitePlugin()],
     ssr: {
-      noExternal: [/^vitepress-plugin-/, /^@nolebase\//]
+      noExternal: [/^vitepress-plugin-/]
     }
   },
 

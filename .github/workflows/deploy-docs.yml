@@ -1,0 +1,78 @@
+name: Deploy Documentation to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Bun
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # 3. Install dependencies
+      - name: Install Dependencies
+        run: bun install
+
+      # 4. Build VitePress documentation
+      - name: Build VitePress Docs
+        run: |
+          echo "Building VitePress documentation..."
+          bun run docs:build
+
+          echo "VitePress build complete. Checking output..."
+          if [ ! -d "docs/.vitepress/dist" ]; then
+            echo "ERROR: VitePress build failed - no output directory found"
+            exit 1
+          fi
+
+          echo "VitePress output files:"
+          ls -la docs/.vitepress/dist/
+
+      # 5. Prepare public directory
+      - name: Prepare Public Directory
+        run: |
+          mkdir -p public
+
+          echo "Copying VitePress output..."
+          cp -r docs/.vitepress/dist/* public/
+
+          echo "Public directory structure:"
+          find public -type f | head -20
+
+      # 6. Setup GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 7. Upload artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public'
+
+      # 8. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

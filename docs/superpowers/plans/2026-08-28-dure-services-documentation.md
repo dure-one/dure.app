@@ -473,13 +473,13 @@ Expected: Backup created
 In `docs/.vitepress/config.mts`, replace:
 ```typescript
   title: 'dure.app',
-  description: '듀레 앱 - dure.one과 myCart 프로젝트 소개',
+  description: '두레 앱 - dure.one과 myCart 프로젝트 소개',
 ```
 
 With:
 ```typescript
   title: 'Dure Services',
-  description: '듀레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
+  description: '두레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
 ```
 
 - [ ] **Step 4: Update Korean nav (lines ~35-39)**
@@ -500,7 +500,7 @@ Replace Korean sidebar array with:
 ```typescript
         sidebar: [
           {
-            text: '📚 듀레 서비스',
+            text: '📚 두레 서비스',
             items: [
               { text: '디렉토리 서비스', link: '/directory' }
             ]

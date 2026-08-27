@@ -70,7 +70,7 @@ dure.app/
 
 **Korean (root locale):**
 ```
-📚 듀레 서비스
+📚 두레 서비스
   └─ 디렉토리 서비스 (/directory)
 
 🏪 판매자 도구
@@ -193,7 +193,7 @@ features:
 ```typescript
 export default withMermaid(defineConfig({
   title: 'Dure Services',
-  description: '듀레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
+  description: '두레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
 
   locales: {
     root: {
@@ -208,7 +208,7 @@ export default withMermaid(defineConfig({
         ],
         sidebar: [
           {
-            text: '📚 듀레 서비스',
+            text: '📚 두레 서비스',
             items: [
               { text: '디렉토리 서비스', link: '/directory' }
             ]

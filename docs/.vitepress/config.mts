@@ -20,7 +20,11 @@ copyReadme()
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
   title: 'Dure Services',
-  description: '듀레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
+  description: '듀어 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
+
+  ignoreDeadLinks: [
+    (url) => url.includes('localhost')
+  ],
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -40,7 +44,7 @@ export default withMermaid(defineConfig({
         ],
         sidebar: [
           {
-            text: '📚 듀레 서비스',
+            text: '📚 두레 서비스',
             items: [
               { text: '디렉토리 서비스', link: '/directory' }
             ]

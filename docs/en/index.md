@@ -2,60 +2,35 @@
 layout: home
 
 hero:
-  name: dure.app
-  text: Open Source Project Hub
-  tagline: Introducing dure.one and myCart projects
+  name: Dure.one
+  text: Directory Service
+  tagline: The central hub connecting merchants and customers
   actions:
     - theme: brand
-      text: Visit dure.one
-      link: https://dure.one
+      text: Learn About Directory
+      link: /en/directory
     - theme: alt
-      text: Visit myCart
-      link: https://github.com/shurco/mycart
+      text: Merchant Tools
+      link: /en/merchant/installer
 
 features:
   - icon: 🌐
-    title: dure.one
-    details: dure is a platform built on the values of cooperation and sharing. It brings the traditional community spirit of working together and helping each other to life with modern technology.
-    link: https://dure.one
+    title: Dure.one Directory Service
+    details: Anyone can register their myCart website with a verified responder phone number. All registrations are verified through government data providers.
+    link: /en/directory
     linkText: Learn more
-  - icon: 🛒
-    title: myCart
-    details: A lightweight e-commerce solution that runs as a single binary file. Built with Go + SQLite + SvelteKit, it can be deployed instantly with no external dependencies.
-    link: https://github.com/shurco/mycart
-    linkText: View on GitHub
 ---
 
-## About dure.one
+## Connected Services
 
-**dure.one** is a collaborative platform named after the Korean traditional concept of *dure* (두레) — a spirit of communal cooperation. It aims to build a better software ecosystem through community-based sharing and collaboration.
+The Dure.one Directory serves as the central hub with various tools for merchants and customers.
 
-### Key Features
+### 🏪 Merchant Tools
 
-- 🤝 **Community First** — Open-source philosophy built on creating and sharing together
-- 🔓 **Fully Open Source** — All source code is public and open to contributions
-- 🇰🇷 **Korean Friendly** — Familiar documentation and support for Korean developers
-- ⚡ **Practical Tools** — Solutions ready to use in real development environments
+**[Dure-Installer](/en/merchant/installer)** — Set up myCart websites with easy quotations through SMS, Telegram, Jabber, and KakaoTalk
 
-## About myCart
+**[Dure-Responder](/en/merchant/responder)** — Manage response workflows for customer requests including orders, quotations, and cancellations. Leverage AI to automatically handle customer needs.
 
-**myCart** is a lightweight e-commerce backend that runs as a single executable file. It is designed for developers and small business owners who want to launch an online store quickly without complex infrastructure.
+### 👥 Customer Tools
 
-### Key Features
-
-- 📦 **Single Binary** — Admin panel, storefront, and API all embedded in one executable
-- 🗄️ **Embedded SQLite** — No external database setup required
-- ⚡ **Go Backend** — Fast and reliable Go-based backend
-- 🎨 **SvelteKit Frontend** — Modern admin UI and storefront
-- 🔌 **Full REST API** — Swagger/OpenAPI documentation included
-- ✅ **E2E Testing** — Comprehensive Playwright-based test coverage
-
-```bash
-# Download and run immediately
-./mycart serve
-
-# Admin panel: http://localhost:8080/_/
-# Storefront:  http://localhost:8080/
-```
-
-> Default credentials: `user@mail.com` / `Pass123`
+**[Dure-Sijang](/en/guest/sijang)** — Cross-platform app to visit and manage favorite merchants. Supports web browsing mode and API mode, search for merchant products and services through the directory service.

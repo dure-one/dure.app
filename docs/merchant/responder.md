@@ -1,4 +1,4 @@
-# Dure-Responder
+# 두레응답기
 
 판매자가 주문, 견적, 취소 등 다양한 고객 요청에 대한 응답 워크플로우를 관리할 수 있는 크로스 플랫폼 애플리케이션입니다.
 
@@ -13,7 +13,7 @@ AI를 활용하여 고객의 요구사항을 이해하고 적절한 응답을 �
 
 ## 연결된 서비스
 
-- [Dure.one 디렉토리](/directory) — 디렉토리에 등록된 응답자 전화번호 관리
-- [Dure-Installer](/merchant/installer) — Installer로 설정한 웹사이트와 연동
+- [두레원 디렉토리](/directory) — 디렉토리에 등록된 응답자 전화번호 관리
+- [두레인스톨러](/merchant/installer) — 인스톨러로 설정한 웹사이트와 연동
 
 [responder.dure.app 방문하기](https://responder.dure.app){.external}

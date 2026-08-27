@@ -1,6 +1,6 @@
-# Dure.one 디렉토리 서비스
+# 두레원 디렉토리 서비스
 
-Dure.one 디렉토리는 판매자와 구매자를 연결하는 중앙 허브입니다.
+두레원 디렉토리는 판매자와 구매자를 연결하는 중앙 허브입니다.
 
 누구나 자신의 myCart 웹사이트를 응답자 전화번호와 함께 등록할 수 있으며, 모든 등록은 정부 데이터 제공자를 통해 검증됩니다. 구매자는 디렉토리를 통해 신뢰할 수 있는 판매자를 찾고, 판매자는 더 많은 고객에게 도달할 수 있습니다.
 
@@ -14,10 +14,10 @@ Dure.one 디렉토리는 판매자와 구매자를 연결하는 중앙 허브입
 ## 연결된 서비스
 
 ### 판매자 도구
-- [Dure-Installer](/merchant/installer) — myCart 웹사이트 설치 및 설정
-- [Dure-Responder](/merchant/responder) — 고객 응답 워크플로우 관리
+- [두레인스톨러](/merchant/installer) — myCart 웹사이트 설치 및 설정
+- [두레응답기](/merchant/responder) — 고객 응답 워크플로우 관리
 
 ### 구매자 도구
-- [Dure-Sijang](/guest/sijang) — 관심 판매자 관리 및 상품 검색
+- [두레시장](/guest/sijang) — 관심 판매자 관리 및 상품 검색
 
 [dure.one 방문하기](https://dure.one){.external}

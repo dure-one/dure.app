@@ -1,4 +1,4 @@
-# Dure-Installer
+# 두레인스톨러
 
 판매자가 다채널 견적 제공 myCart 웹사이트를 설정할 수 있는 설치 도구입니다.
 
@@ -13,7 +13,7 @@
 
 ## 연결된 서비스
 
-- [Dure.one 디렉토리](/directory) — 설치 후 디렉토리에 등록하여 고객 유입
-- [Dure-Responder](/merchant/responder) — 자동 응답 워크플로우 설정
+- [두레원 디렉토리](/directory) — 설치 후 디렉토리에 등록하여 고객 유입
+- [두레응답기](/merchant/responder) — 자동 응답 워크플로우 설정
 
 [installer.dure.app 방문하기](https://installer.dure.app){.external}

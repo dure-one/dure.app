@@ -46,20 +46,20 @@ export default withMermaid(defineConfig({
           {
             text: '📚 두레 서비스',
             items: [
-              { text: '디렉토리 서비스', link: '/directory' }
+              { text: '두레원', link: '/directory' }
             ]
           },
           {
             text: '🏪 판매자 도구',
             items: [
-              { text: 'Dure-Installer', link: '/merchant/installer' },
-              { text: 'Dure-Responder', link: '/merchant/responder' }
+              { text: '두레인스톨러', link: '/merchant/installer' },
+              { text: '두레응답기', link: '/merchant/responder' }
             ]
           },
           {
             text: '👥 구매자 도구',
             items: [
-              { text: 'Dure-Sijang', link: '/guest/sijang' }
+              { text: '두레시장', link: '/guest/sijang' }
             ]
           }
         ],

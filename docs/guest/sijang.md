@@ -17,4 +17,4 @@
 - [Dure.one 디렉토리](/directory) — 판매자 검색 및 발견
 - [Dure-Installer](/merchant/installer) — 판매자가 설정한 웹사이트에 접속
 
-[sijang.dure.one 방문하기](https://sijang.dure.one){.external}
+[sijang.dure.app 방문하기](https://sijang.dure.app){.external}

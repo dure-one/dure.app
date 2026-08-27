@@ -16,4 +16,4 @@ Leverages AI to understand customer needs and automatically generate appropriate
 - [Dure.one Directory](/en/directory) — Manage responder phone numbers registered in directory
 - [Dure-Installer](/en/merchant/installer) — Integrate with websites configured via Installer
 
-[Visit responder.dure.one](https://responder.dure.one){.external}
+[Visit responder.dure.app](https://responder.dure.app){.external}

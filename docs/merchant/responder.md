@@ -16,4 +16,4 @@ AI를 활용하여 고객의 요구사항을 이해하고 적절한 응답을 �
 - [Dure.one 디렉토리](/directory) — 디렉토리에 등록된 응답자 전화번호 관리
 - [Dure-Installer](/merchant/installer) — Installer로 설정한 웹사이트와 연동
 
-[responder.dure.one 방문하기](https://responder.dure.one){.external}
+[responder.dure.app 방문하기](https://responder.dure.app){.external}

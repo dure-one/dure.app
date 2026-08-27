@@ -17,4 +17,4 @@ Supports both web browsing mode and API mode for use in various environments. Se
 - [Dure.one Directory](/en/directory) — Discover and search for merchants
 - [Dure-Installer](/en/merchant/installer) — Access websites configured by merchants
 
-[Visit sijang.dure.one](https://sijang.dure.one){.external}
+[Visit sijang.dure.app](https://sijang.dure.app){.external}

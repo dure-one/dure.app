@@ -1,0 +1,19 @@
+# Dure-Installer
+
+판매자가 다채널 견적 제공 myCart 웹사이트를 설정할 수 있는 설치 도구입니다.
+
+간편하게 온라인 스토어를 구축하고 SMS, 텔레그램, Jabber, 카카오톡을 통해 고객에게 실시간 견적을 제공할 수 있습니다. 복잡한 설정 없이 몇 분 만에 전자상거래를 시작할 수 있습니다.
+
+## 주요 기능
+
+- 📱 **다채널 견적** — SMS, 텔레그램, Jabber, 카카오톡 지원
+- 🛒 **myCart 통합** — 원클릭 myCart 웹사이트 설정
+- ⚡ **빠른 설정** — 몇 분 만에 온라인 스토어 구축
+- 🔧 **맞춤 설정** — 브랜딩 및 상품 카탈로그 커스터마이징
+
+## 연결된 서비스
+
+- [Dure.one 디렉토리](/directory) — 설치 후 디렉토리에 등록하여 고객 유입
+- [Dure-Responder](/merchant/responder) — 자동 응답 워크플로우 설정
+
+[installer.dure.app 방문하기](https://installer.dure.app){.external}

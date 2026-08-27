@@ -19,8 +19,8 @@ copyReadme()
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
-  title: 'dure.app',
-  description: '듀레 앱 - dure.one과 myCart 프로젝트 소개',
+  title: 'Dure Services',
+  description: '듀레 서비스 - 디렉토리 기반 판매자-구매자 연결 플랫폼',
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -34,16 +34,28 @@ export default withMermaid(defineConfig({
       themeConfig: {
         nav: [
           { text: '홈', link: '/' },
-          { text: 'dure.one', link: 'https://dure.one', target: '_blank', rel: 'noopener noreferrer' },
-          { text: 'myCart', link: 'https://github.com/shurco/mycart', target: '_blank', rel: 'noopener noreferrer' }
+          { text: '디렉토리', link: '/directory' },
+          { text: '판매자 도구', link: '/merchant/installer' },
+          { text: '구매자 도구', link: '/guest/sijang' }
         ],
         sidebar: [
           {
-            text: '프로젝트',
+            text: '📚 듀레 서비스',
             items: [
-              { text: '홈', link: '/' },
-              { text: 'dure.one', link: 'https://dure.one', target: '_blank' },
-              { text: 'myCart', link: 'https://github.com/shurco/mycart', target: '_blank' }
+              { text: '디렉토리 서비스', link: '/directory' }
+            ]
+          },
+          {
+            text: '🏪 판매자 도구',
+            items: [
+              { text: 'Dure-Installer', link: '/merchant/installer' },
+              { text: 'Dure-Responder', link: '/merchant/responder' }
+            ]
+          },
+          {
+            text: '👥 구매자 도구',
+            items: [
+              { text: 'Dure-Sijang', link: '/guest/sijang' }
             ]
           }
         ],
@@ -68,16 +80,28 @@ export default withMermaid(defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'dure.one', link: 'https://dure.one', target: '_blank', rel: 'noopener noreferrer' },
-          { text: 'myCart', link: 'https://github.com/shurco/mycart', target: '_blank', rel: 'noopener noreferrer' }
+          { text: 'Directory', link: '/en/directory' },
+          { text: 'Merchant Tools', link: '/en/merchant/installer' },
+          { text: 'Guest Tools', link: '/en/guest/sijang' }
         ],
         sidebar: [
           {
-            text: 'Projects',
+            text: '📚 Dure Services',
             items: [
-              { text: 'Home', link: '/en/' },
-              { text: 'dure.one', link: 'https://dure.one', target: '_blank' },
-              { text: 'myCart', link: 'https://github.com/shurco/mycart', target: '_blank' }
+              { text: 'Directory Service', link: '/en/directory' }
+            ]
+          },
+          {
+            text: '🏪 Merchant Tools',
+            items: [
+              { text: 'Dure-Installer', link: '/en/merchant/installer' },
+              { text: 'Dure-Responder', link: '/en/merchant/responder' }
+            ]
+          },
+          {
+            text: '👥 Guest Tools',
+            items: [
+              { text: 'Dure-Sijang', link: '/en/guest/sijang' }
             ]
           }
         ],
